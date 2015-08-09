@@ -20,7 +20,7 @@
 	<!-- <context:component-scan	base-package="com.javafreakers.service" >
 	
 	</context:component-scan> -->
-		 <import resource="classpath:spring-config/applicationContext-hibernate.xml"/> 
+		<!--  <import resource="classpath:spring-config/applicationContext-hibernate.xml"/>  -->
 		
 		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix" value="/WEB-INF/views/" />
