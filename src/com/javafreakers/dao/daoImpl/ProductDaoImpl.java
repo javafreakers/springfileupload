@@ -11,13 +11,10 @@ import com.javafreakers.model.Product;
 public class ProductDaoImpl implements ProductDao{
 	@Autowired
 	SessionFactory sessionFactory;
-
-	
 	@Override
 	@Transactional
 	public boolean saveProduct(Product product) {
 		try{
-			/*Product product2 = (Product)*/
 		Long identifier =(Long)	sessionFactory.getCurrentSession().save(product);
 			if(identifier!=null){
 				return true;
@@ -30,7 +27,5 @@ public class ProductDaoImpl implements ProductDao{
 			System.out.println("Exception in saving product");
 			return false;
 		}
-		
 	}
-	
 }
